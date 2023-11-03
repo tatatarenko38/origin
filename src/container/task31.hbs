@@ -1,4 +1,4 @@
-<div>
+<div class="m-5">
 
     {{#with navigation}}
 
@@ -11,9 +11,7 @@
         {{/with}}
     </nuv>
     {{/with}}
-    <br>
-    <hr>
-    <br>
+    <hr class="mx-3">
     <div>
         {{#with header}}
         <h1>{{title}}</h1>
@@ -23,9 +21,7 @@
         {{/with}}
         {{/with}}
     </div>
-    <br>
-    <hr>
-    <br>
+    <hr class="mx-3">
 
     <div>
         {{#with city}}
@@ -95,9 +91,7 @@
         </table>
     </div>
 
-    <br>
-    <hr>
-    <br>
+     <hr class="mx-3">
     {{#with gallery}}
     <h2>{{title}}</h2>
 
@@ -119,14 +113,11 @@
         {{/each}}
     </div>
     {{/with}}
-    <br>
-    <hr>
-    <br>
+    <hr class="mx-3">
     {{#with relaxion}}
     <div>
-        <div class="display-3">{{title}}</div>
-        <br>
-        <br>
+        <div class="display-3 mb-3">{{title}}</div>
+        
         <div class="row gy-5">
             {{#each cards}}
             <div class="col-5">
@@ -144,9 +135,7 @@
         </div>
     </div>
     {{/with}}
-    <br>
-    <hr>
-    <br>
+    <hr class="mx-3">
 
     <div class="row">
         {{#with rest}}
@@ -171,10 +160,7 @@
         {{/each}}
         {{/with}}
     </div>
-    <br>
-    <hr>
-    <br>
-    <br>
+    <hr class="mx-3">
     <div class="row">
         {{#with proposition}}
         <div class="display-2">{{title}}</div>
@@ -193,47 +179,12 @@
         {{/each}}
         {{/with}}
     </div>
-    <br>
-    <br>
-    <hr>
-    <br>
+    <hr class="mx-3">
     <div class="row g-5">
         {{#with footer}}
         <div class="col-3">
-            <h5>{{title}}</h5>
-            
-            <table class="table">
-                <tbody>
-                    <tr>
-                         <td>{{#each navigation}}
-                        <a href="href" target="_blank" type="button" class="btn btn-link">{{text}}</a> {{/each}}</td>
-                        
-                         <td>{{#each socialMedia}}
-                        <a href="link" target="_blank" type="button" class="btn btn-outline-dark">{{name}}</a> {{/each}}</td>
-                        
-                         <td>{{#each partners}}
-                        <a href="link" target="_blank" type="button" class="btn btn-outline-info">{{name}}</a> {{/each}}</td>
-                        
-                       
-                    </tr>
-                </tbody>                
-            </table>
+            <h5>{{title}}</h5>         
            
-        </div>
         {{/with}}
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>

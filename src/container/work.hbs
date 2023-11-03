@@ -2,7 +2,7 @@
 Це код container файлу для summary сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
 --}}
-<div>
+<div class="m-5">
     {{#with main}}
     <main>
         <section>
@@ -13,13 +13,13 @@
                 <ul>
                     {{#each works}}
                     <li>
-                        <div>{{position}}</div>
+                        <div class="mx-3">{{position}}</div>
 
-                        <br>
+                        
 
 
 
-                        <div>{{duration.from}} -
+                        <div class="mb-3">{{duration.from}} -
                             {{#if duration.to}}
                             {{duration.to}}
                             {{else}}
@@ -27,9 +27,9 @@
                             {{/if}}
                         </div>
 
-                        <br>
+                       
 
-                        <div>
+                        <div class="mb-5">
                             {{#with company}}
                             {{#if url}}
                             {{> link text=name href=url blank=true noLine=true}}
@@ -40,14 +40,12 @@
 
                         </div>
 
-                        <br>
-                        <br>
-
-                        <div>
+                       
+                        <div class="mb-3">
                             <strong>Projects ({{projectAmount}})</strong>
                         </div>
 
-                        <br>
+                        
 
                         <div>
 
@@ -92,7 +90,7 @@
 
 
                     </li>
-                    <br>
+                    
                     {{/each}}
                 </ul>
             </div>
