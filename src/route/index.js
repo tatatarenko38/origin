@@ -41,29 +41,104 @@ router.get('/', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('index', {
-    layout: "index",
-    header:{
-      name:'Тетяна',
-      lastname:'Татаренко',
-      title:'Resume project',
+    layout: 'index',
+    header: {
+      name: 'Тетяна',
+      lastname: 'Татаренко',
+      title: 'Resume project',
     },
-    paragraph:{
-     " Це мої перші, ще не зовсім впевнені кроки у великому світі програмування ",
-    },
-    buttons:[
+    paragraph: ` Це мої перші, ще не зовсім впевнені кроки у великому світі програмування.`,
+
+    buttons: [
       {
-        text: 'bio',
+        text: 'Bio',
         url: '/bio',
       },
       {
-        text: 'Bootstrap',
-        url: 'https://getbootstrap.com/',
+        text: 'Car',
+        url: '/car',
       },
-    ]
-
-
-    
-    
+      {
+        text: 'Bootstrap',
+        url: '/bootstrap',
+      },
+      {
+        text: 'Education',
+        url: '/Education',
+      },
+      {
+        text: 'Error',
+        url: '/error',
+      },
+      {
+        text: 'Facebook',
+        url: '/facebook',
+      },
+      {
+        text: 'Js',
+        url: '/js',
+      },
+      {
+        text: 'Person',
+        url: '/person',
+      },
+      {
+        text: 'Program',
+        url: '/program',
+      },
+      {
+        text: 'Shopcart',
+        url: '/shopcart',
+      },
+      {
+        text: 'Shopcatalog',
+        url: '/shopcatalog',
+      },
+      {
+        text: 'Shophome',
+        url: '/shophome',
+      },
+      {
+        text: 'Shopprofile',
+        url: '/shopprofile',
+      },
+      {
+        text: 'Shopreview',
+        url: '/shopreview',
+      },
+      {
+        text: 'Skills',
+        url: '/skills',
+      },
+      {
+        text: 'Summary',
+        url: '/summary',
+      },
+      {
+        text: 'Task-21',
+        url: '/task-21',
+      },
+      {
+        text: 'Task22',
+        url: '/task22',
+      },
+      {
+        text: 'Task31',
+        url: '/task31',
+      },
+      {
+        text: 'Shopcart',
+        url: '/shopcart',
+      },
+      {
+        text: 'Web',
+        url: '/web',
+      },
+      {
+        text: 'Work',
+        url: '/work',
+      },
+    ],
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
@@ -610,7 +685,7 @@ router.get('/program', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
 
   res.render('program', {
-    layout: 'program',
+    layout: 'basic',
     program: {
       excursion: {
         name: 'Cultural Tour',
@@ -1262,7 +1337,7 @@ router.get('/task31', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('task31', {
-    layout:'basic',
+    layout: 'basic',
     navigation: {
       links: [
         {
@@ -2164,7 +2239,8 @@ router.get('/shoporder', function (req, res) {
 })
 
 // ================================================================
-router.get('/shopcart', function (req, res) {  // res.render генерує нам HTML сторінку
+router.get('/shopcart', function (req, res) {
+  // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('shopcart', {
@@ -2734,8 +2810,8 @@ router.get('/shopreview', function (req, res) {
         tabs: [
           { text: 'Про товар' },
           { text: 'Характеристики' },
-          { text: 'Відгуки', isActive:true },
-        ], 
+          { text: 'Відгуки', isActive: true },
+        ],
         report: {
           title: 'Залиште відгук про товар',
           button: {
@@ -2986,8 +3062,6 @@ router.get('/shopreview', function (req, res) {
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
-
-
 
 // Підключаємо роутер до бек-енду
 module.exports = router
