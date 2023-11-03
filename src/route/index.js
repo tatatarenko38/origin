@@ -40,8 +40,29 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('/', {
+  res.render('index', {
     layout: "index",
+    header:{
+      name:'Тетяна',
+      lastname:'Татаренко',
+      title:'Resume project',
+    },
+    paragraph:{
+     " Це мої перші, ще не зовсім впевнені кроки у великому світі програмування ",
+    },
+    buttons:[
+      {
+        text: 'bio',
+        url: '/bio',
+      },
+      {
+        text: 'Bootstrap',
+        url: 'https://getbootstrap.com/',
+      },
+    ]
+
+
+    
     
   })
   //                  ↑↑ сюди вводимо JSON дані
